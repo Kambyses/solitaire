@@ -1,0 +1,212 @@
+html {
+  width:                 100%;
+  height:                100%;
+}
+
+body {
+  position:              relative;
+  width:                 100%;
+  height:                100%;
+  margin:                0;
+}
+
+div {
+  display:               block;
+  box-sizing:            border-box;
+  position:              absolute;
+}
+
+.wrapper {
+  top:                   20px;
+  left:                  20px;
+  right:                 20px;
+  bottom:                20px;
+}
+
+.dealer, .pile, .stack, .card {
+  width:                 122px;
+  height:                174px;
+  background-color:      #f00;
+  background-repeat:     repeat;
+  background-position:   0 0;
+  border:                solid 2px #000;
+  border-radius:         7px;
+}
+
+.card {
+  top:                   0;
+  left:                  0;
+  margin:                -2px 0 0 -2px;
+  background-image:      url("deck.jpg");
+  cursor:                pointer;
+}
+
+.card[data-open="false"] {
+  background-position:   -1800px -420px !important;
+}
+
+.dealer, .pile {
+  top:                   0;
+}
+
+.stack {
+  top:                   200px;
+}
+
+.dealer[data-id="1"] {
+  left:                  900px;
+}
+
+.dealer[data-id="2"] {
+  left:                  750px;
+}
+
+.pile[data-id="1"] {
+  left:                  0;
+}
+
+.pile[data-id="2"] {
+  left:                  150px;
+}
+
+.pile[data-id="3"] {
+  left:                  300px;
+}
+
+.pile[data-id="4"] {
+  left:                  450px;
+}
+
+.stack[data-id="1"] {
+  left:                  0;
+}
+
+.stack[data-id="2"] {
+  left:                  150px;
+}
+
+.stack[data-id="3"] {
+  left:                  300px;
+}
+
+.stack[data-id="4"] {
+  left:                  450px;
+}
+
+.stack[data-id="5"] {
+  left:                  600px;
+}
+
+.stack[data-id="6"] {
+  left:                  750px;
+}
+
+.stack[data-id="7"] {
+  left:                  900px;
+}
+
+.controls {
+  top:                   0;
+  right:                 0;
+}
+
+
+
+
+/*
+
+.card {
+  display:               block;
+  box-sizing:            border-box;
+  position:              absolute;
+  left:                  0;
+  top:                   0;
+  width:                 122px;
+  height:                174px;
+  margin:                0;
+  background-image:      url('deck.jpg');
+  background-color:      red;
+  background-repeat:     repeat;
+  background-position:   0 0;
+  border:                solid 2px #000;
+  border-radius:         7px;
+  cursor:                pointer;
+  overflow:              hidden;
+  z-index:               10;
+}
+
+.card:not(.open) {
+  background-position:   -1800px -420px !important;
+}
+
+.stacks-1 {
+  display:               block;
+  box-sizing:            border-box;
+  position:              absolute;
+  top:                   10px;
+  left:                  0;
+  z-index:               2;
+}
+
+.stacks-1 .stack-1,
+.stacks-1 .stack-2 {
+  display:               block;
+  box-sizing:            border-box;
+  position:              relative;
+  clear:                 none;
+  float:                 left;
+  width:                 122px;
+  height:                174px;
+  margin:                0 0 0 10px;
+}
+
+.stacks-2 {
+  display:               block;
+  box-sizing:            border-box;
+  position:              absolute;
+  top:                   10px;
+  left:                  406px;
+  z-index:               2;
+}
+
+.stacks-2 .stack-1,
+.stacks-2 .stack-2,
+.stacks-2 .stack-3,
+.stacks-2 .stack-4 {
+  display:               block;
+  box-sizing:            border-box;
+  position:              relative;
+  clear:                 none;
+  float:                 left;
+  width:                 122px;
+  height:                174px;
+  margin:                0 10px 0 0;
+  background:            red;
+}
+
+.stacks-3 {
+  display:               block;
+  box-sizing:            border-box;
+  position:              absolute;
+  top:                   220px;
+  left:                  0;
+  z-index:               2;
+}
+
+.stacks-3 .stack-1,
+.stacks-3 .stack-2,
+.stacks-3 .stack-3,
+.stacks-3 .stack-4,
+.stacks-3 .stack-5,
+.stacks-3 .stack-6,
+.stacks-3 .stack-7 {
+  display:               block;
+  box-sizing:            border-box;
+  position:              relative;
+  clear:                 none;
+  float:                 left;
+  width:                 122px;
+  height:                174px;
+  margin:                0 0 0 10px;
+}
+*/
